@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="806.0" prefWidth="990.0" stylesheets="@../CSS/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sciencelab.Controller.DashBordController">
+   <children>
+      <AnchorPane fx:id="ancDash" prefHeight="616.0" prefWidth="272.0" style="-fx-background-color: #067e7f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblScienceLab" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="32.0" prefWidth="219.0" style="-fx-background-color: #c9fef4;" text="SM Scinence Lab " underline="true" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="27.599999999999994">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="btnSupplierID" alignment="TOP_LEFT" layoutX="20.0" layoutY="60.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #f5f6fa;" text="     Supplier" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-buying-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="60.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnChemicalOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Chemical" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-chemical-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="60.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnEquipmentOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Equipment" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-microscope-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="60.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnProjectOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Project" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-project-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnProgressOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="      Progress" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.399999999999977">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-file-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnScientistOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Scientist" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.399999999999977">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-scientist-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnGroupOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Group" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.399999999999977">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-group-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Employee" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.399999999999977">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-name-tag-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="TOP_LEFT" layoutX="15.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnFunderOnAction" prefHeight="40.0" style="-fx-background-color: #f5f6fa;" text="     Funder" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.399999999999977">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-man-with-money-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="153.0" fitWidth="235.0" layoutX="40.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Science%20lab%20green%20logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="191.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-arrow-48.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="40.0" layoutY="740.0" mnemonicParsing="false" onAction="#BacktologinOnAction" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #93FFE8; -fx-background-radius: 15;" text="Back to login">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+                     <image>
+                        <Image url="@../Icons/icons8-arrow-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ancPanel" layoutX="276.8" layoutY="165.0" prefHeight="721.0" prefWidth="717.0" style="-fx-background-color: #89bfb6;" stylesheets="@../CSS/test.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="31.0" layoutY="209.0" prefHeight="302.0" prefWidth="569.0" AnchorPane.leftAnchor="31.0">
+               <children>
+                  <AnchorPane layoutY="182.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #93FFE8; -fx-background-radius: 30;" AnchorPane.rightAnchor="409.6">
+                     <children>
+                        <Label layoutX="34.0" layoutY="7.0" prefHeight="26.0" prefWidth="137.0" text="Total Employees">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelWorkersCount" layoutX="123.0" layoutY="13.0" prefHeight="95.0" prefWidth="100.0" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelTotalEmployees" layoutX="34.0" layoutY="55.0" prefHeight="40.0" prefWidth="100.0" text="Label" />
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="143.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/icons8-name-tag-50.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #93FFE8; -fx-background-radius: 30;">
+                     <children>
+                        <Label fx:id="labelOrderCount" layoutX="123.0" layoutY="7.0" prefHeight="95.0" prefWidth="100.0" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="7.0" prefHeight="26.0" prefWidth="129.0" text="Total  Projects">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelTotalProjects" layoutX="32.0" layoutY="55.0" prefHeight="40.0" prefWidth="100.0" text="Label" />
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="143.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/icons8-project-48.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="409.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #93FFE8; -fx-background-radius: 30;" AnchorPane.leftAnchor="409.0">
+                     <children>
+                        <Label layoutX="33.0" layoutY="6.0" prefHeight="27.0" prefWidth="138.0" text="Total  Chemicals">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelMealCount" layoutX="123.0" layoutY="13.0" prefHeight="95.0" prefWidth="100.0" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelTotalChemicals" layoutX="33.0" layoutY="55.0" prefHeight="40.0" prefWidth="100.0" text="Label" />
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="143.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/icons8-chemical-50.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="409.0" layoutY="182.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #93FFE8; -fx-background-radius: 30;" AnchorPane.rightAnchor="0.6000000000000227">
+                     <children>
+                        <Label layoutX="28.0" layoutY="2.0" prefHeight="26.0" prefWidth="138.0" text="Total Equipments">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelSuppliersCount" layoutX="123.0" layoutY="13.0" prefHeight="95.0" prefWidth="100.0">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelTotalEquipments" layoutX="28.0" layoutY="55.0" prefHeight="40.0" prefWidth="100.0" text="Label" />
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="143.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/icons8-microscope-50.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

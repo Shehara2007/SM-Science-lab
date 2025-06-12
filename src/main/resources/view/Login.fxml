@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1006.0" style="-fx-background-color: #067e7f;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sciencelab.Controller.LoginPageController">
+
+    <children>
+      <ImageView fitHeight="394.0" fitWidth="395.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gummy-chemistry-lab.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="ancLogin" layoutX="407.3999938964844" layoutY="10.199999809265137" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="19.0">
+         <children>
+      
+      
+              <VBox alignment="CENTER" layoutX="4.0" layoutY="5.0" prefHeight="360.0" prefWidth="575.0" spacing="15.0" style="-fx-background-color: #89bfb6; -fx-background-radius: 20; -fx-padding: 15;">
+      
+                  <effect>
+                      <DropShadow color="#00000055" radius="10.0" />
+                  </effect>
+      
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="230.0" text="_Welcome Back_">
+                      <font>
+                          <Font name="Gabriola" size="41.0" />
+                      </font>
+                  </Label>
+      
+                  <Label text="~ Login to your account ~" textFill="#333">
+                      <font>
+                          <Font name="System Bold" size="14.0" />
+                      </font>
+                  </Label>
+      
+                  <TextField fx:id="txtUsername" maxWidth="250.0" onAction="#txtUsernameOnAction" prefHeight="35.0" prefWidth="250.0" promptText="Username">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </TextField>
+                  <PasswordField fx:id="txtPassword" maxWidth="250.0" onAction="#PasswordOnAction" prefHeight="35.0" prefWidth="250.0" promptText="Password">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </PasswordField>
+               <Button fx:id="txtForgot" mnemonicParsing="false" onAction="#forgotOnAction" prefHeight="28.0" prefWidth="141.0" text="Forgot Password">
+                  <graphic>
+                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Icons/icons8-forgot-password-48.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+               <Button fx:id="btnLogin1" defaultButton="true" graphicTextGap="5.0" layoutX="172.0" layoutY="283.0" onAction="#loginOnAction" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #067e7f; -fx-text-fill: white; -fx-background-radius: 20;" text="- Login -">
+                  <font>
+                     <Font name="Yu Gothic UI Bold" size="20.0" />
+                  </font>
+               </Button>
+                  <padding>
+                      <Insets bottom="5.0" right="5.0" top="5.0" />
+                  </padding>
+              </VBox>
+         </children>
+      </AnchorPane>
+
+    </children>
+</AnchorPane>
